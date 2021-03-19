@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>8: Viết chương trình cho phép xóa một phần tử trong mảng</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  let array8 = ["a","b","c","b","b","b","b","b","b","b",'end'];
+  let valueToRemove = prompt('nhập chuỗi cần xóa');
+  function removeElement(arr,valueToRemove) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === valueToRemove) {
+        arr.splice(i,1);
+        i--;
+      }
+    }
+  }
+  removeElement(array8, valueToRemove);
+  console.log("8. " + array8);
+
+</script>

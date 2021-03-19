@@ -1,0 +1,27 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2: Viết hàm tính trung bình cộng của một mảng. mảng này người dùng nhập từ màn hình</title>
+</head>
+<body>
+
+<script>
+ // bai2
+  let arrayInput = []
+  for (let i=0;i<5;i++) {
+    arrayInput[i] = parseInt(prompt('nhập số bất kì '))
+  }
+  function getAverageOfArray (arrayInput) {
+    let sum = 0
+    for (let i =0 ;i<arrayInput[i];i++) {
+      sum = sum + arrayInput[i] ;
+
+    }
+    average = sum / arrayInput.length;
+    return average
+  }
+  console.log(getAverageOfArray(arrayInput))
+</script>
+</body>
+</html>

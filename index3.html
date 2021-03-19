@@ -1,0 +1,32 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3: Viết hàm tìm giá trị lớn nhất, giá trị nhỏ nhất của một mảng. Mảng này người dùng nhập từ màn hình</title>
+</head>
+<body>
+
+<script>
+ // bai3
+ let arrayInput1 = [];
+ for(let i=0;i<4;i++) {
+   arrayInput1[i] = prompt('nhập 1 phần tử chuỗi trong mảng')
+ }
+ function getMinMax () {
+   let min = arrayInput1[0]
+   let max = arrayInput1[0]
+   for(let i=0;i<arrayInput1.length;i++) {
+     if(arrayInput1[i] > max) {
+       max = arrayInput1[i];
+     }
+     if (arrayInput1[i] < min) {
+       min =arrayInput1[i];
+     }
+   }
+   return [max,min];
+
+ }
+console.log((getMinMax(arrayInput1)))
+</script>
+</body>
+</html>
